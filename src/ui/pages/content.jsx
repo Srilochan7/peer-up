@@ -15,7 +15,7 @@ const Content = () => {
   const speed = 10; // Animation speed
 
   return (
-    <div className="min-h-screen w-full bg-white flex items-center justify-center py-20 px-4 relative overflow-hidden">
+    <div className="w-full bg-white flex items-center justify-center py-20 px-4 relative overflow-hidden min-h-screen">
       <div className="absolute inset-0 w-full h-full">
         <div
           className="absolute right-0 w-1/2 h-full bg-gray-50"
@@ -43,16 +43,13 @@ const Content = () => {
             <a href="#" className="text-blue-500 hover:underline">
               ......@aceec.ac.in 
             </a>
-            .
-            <br/> 
-            <a href="#" className="text-purple-500"> Connect with peers</a>
-            ,
-            <a href="#" className="text-purple-500"> collaborate on projects</a>
-            ,
+            .<br /> 
+            <a href="#" className="text-purple-500"> Connect with peers</a>,
+            <a href="#" className="text-purple-500"> collaborate on projects</a>,
             <a href="#" className="text-purple-500"> join Communities </a>
-            and
-            <a href="#" className="text-purple-500"> seamlessly transition into the alumni network</a>
-             . Build meaningful relationships that extend beyond graduation.🚀
+            and seamlessly transition into the
+            <a href="#" className="text-purple-500"> alumni network</a>
+            . Build meaningful relationships that extend beyond graduation.🚀
           </p>
         </div>
 

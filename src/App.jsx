@@ -5,6 +5,7 @@ import './App.css'
 import Hero from './ui/pages/hero';
 import Content from './ui/pages/content';
 import Footer from './ui/components/footer'
+import About from './ui/pages/about'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,7 +14,9 @@ function App() {
     <>
     <Hero/>
     <Content/>
+    <About/>
     <Footer/>
+
     </>
   )
 }
