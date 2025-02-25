@@ -132,6 +132,7 @@ const Hero = () => {
 
       {/* The new Navbar component */}
       <Navbar />
+      
 
       {/* Main Content */}
       <motion.div 
@@ -140,6 +141,14 @@ const Hero = () => {
         initial="hidden"
         animate={isLoaded ? "visible" : "hidden"}
       >
+      <motion.button 
+    className="bg-gray-100 rounded-full px-4 py-2 text-sm hover:bg-gray-200 transition-colors"
+    variants={itemVariants}
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+  >
+    Exclusively for the Ace student community 🎓!
+  </motion.button>
         <motion.h1 
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 md:mb-6 tracking-tight"
           variants={itemVariants}
