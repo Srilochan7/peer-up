@@ -7,20 +7,32 @@ import Content from './ui/pages/content';
 import Footer from './ui/components/footer'
 import College from './ui/pages/college'
 import About from './ui/pages/about'
+import Register from './ui/auth/register';
+import { Routes, Route } from "react-router-dom";
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <Hero/>
-    <Content/>
-    <College/>
-    <About/>
-    <Footer/>
-
+ 
+ <Routes>
+       <Route path="/" element={
+         <>
+           <Hero />
+           <Content/>
+           <College/>
+           <About/>
+           <Footer/>
+         </>
+       } />
+       <Route path="/register" element={<Register />} />
+ 
+     </Routes>
+ 
     </>
-  )
+   );
 }
 
 export default App

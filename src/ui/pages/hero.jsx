@@ -168,9 +168,13 @@ const Hero = () => {
           className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4"
           variants={itemVariants}
         >
-          <button className="bg-black text-white px-8 py-4 rounded-full text-base md:text-lg font-medium hover:bg-gray-800 transition-colors">
-            I'm Student
-          </button>
+                <button
+        className="bg-black text-white px-8 py-4 rounded-full text-base md:text-lg font-medium hover:bg-gray-800 transition-colors"
+        onClick={() => (window.location.href = "/register")}
+      >
+        I'm Student
+      </button>
+
           <button className="bg-black text-white px-8 py-4 rounded-full text-base md:text-lg font-medium hover:bg-gray-800 transition-colors">
             Clubs & Chapters
           </button>
