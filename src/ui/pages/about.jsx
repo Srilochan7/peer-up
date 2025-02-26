@@ -1,51 +1,71 @@
-import { div } from 'framer-motion/client';
-import React from 'react';
+  import React from 'react';
 
-const About = () => {
+  const About = () => {
     return (
-        
-        <div className="min-h-screen w-full bg-white flex items-center relative overflow-hidden">
-          {/* Background pattern - matches the pattern from Content component */}
-        
+      <div className="bg-white text-black min-h-screen p-8">
+        <div className="max-w-6xl mx-auto">
+          {/* Mission Badge */}
+          <div className="mb-4">
+            <span className="inline-block px-4 py-1 border border-black rounded-full text-sm">
+              Our Mission
+            </span>
+          </div>
           
-          {/* Main content container */}
-          <div className="max-w-7xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center p-8 relative z-10">
-            {/* Left side content */}
-            <div className="space-y-6">
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">Ready to get started?</h1>
-              <p className="text-lg text-gray-600">
-                Start your college adventure with PeerUp today and make real connections that last!
-              </p>
-              
-              <button className="flex items-center bg-white border border-gray-300 rounded-full px-6 py-3 text-gray-800 font-medium w-fit hover:bg-gray-50 transition-all duration-300">
-                <span className="mr-2 text-black">•</span>
-                Join Waitlist
-              </button>
+          {/* Main Heading */}
+          <h1 className="text-6xl md:text-7xl font-bold leading-tight mb-8 tracking-tight">
+            Building Meaningful Connections.
+            <br />
+            Anytime, Anywhere.
+          </h1>
+          
+          {/* Mission Description */}
+          <p className="text-xl max-w-3xl mb-16">
+            'PairUp' isn't just another platform—it's a movement. Whether you want to
+            network, collaborate, or make real friends, we provide a seamless way to
+            connect with like-minded people in your college and beyond.
+          </p>
+          
+          {/* Image Grid - Polaroid Style */}
+          <div className="flex flex-wrap gap-6 justify-center">
+            {/* First Image - Take Away */}
+            <div className="relative">
+              <div className="bg-white border-4 border-black rounded-lg p-3 pb-16 shadow-lg transform rotate-0 max-w-xs">
+                <img 
+                  src="/assets/mark.jpg" 
+                  alt="Take Away neon sign" 
+                  className="w-full h-auto object-cover rounded-sm"
+                />
+                <p className="absolute bottom-6 left-0 right-0 text-center text-lg">Find Your Tribe</p>
+              </div>
             </div>
             
-            {/* Right side image with image-based glow effect */}
-            <div className="relative w-full h-100 md:h-100">
-              {/* Image-based glow using duplicate image with blur */}
-              <div className="absolute inset-0 w-full h-full overflow-hidden rounded-3xl blur-xl opacity-40 scale-105">
+            {/* Second Image - The tribe */}
+            <div className="relative">
+              <div className="bg-white border-4 border-black rounded-lg p-3 pb-16 shadow-lg transform -rotate-2 max-w-xs mt-4">
                 <img 
-                  src="/assets/college.jpeg" 
-                  alt=""
-                  className="w-full h-full object-cover"
+                  src="/assets/collab.jpg" 
+                  alt="Digital glitch art of a face" 
+                  className="w-full h-auto object-cover rounded-sm"
                 />
+                <p className="absolute bottom-6 left-0 right-0 text-center text-lg">Connect & Focus</p>
               </div>
-              
-              {/* Main image */}
-              <div className="relative w-full h-full overflow-hidden rounded-3xl shadow-xl">
+            </div>
+            
+            {/* Third Image - Launch */}
+            <div className="relative">
+              <div className="bg-white border-4 border-black rounded-lg p-3 pb-16 shadow-lg transform rotate-2 max-w-xs mt-8">
                 <img 
-                  src="/assets/college.jpeg" 
-                  alt="College campus with buildings and lake"
-                  className="w-full h-full object-cover"
+                  src="/assets/rocket.jpg" 
+                  alt="Rocket launch" 
+                  className="w-full h-auto object-cover rounded-sm"
                 />
+                <p className="absolute bottom-6 left-0 right-0 text-center text-lg">launching soon !!!</p>
               </div>
             </div>
           </div>
         </div>
-      );
-};
+      </div>
+    );
+  };
 
-export default About;
+  export default About;

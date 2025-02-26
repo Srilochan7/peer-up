@@ -5,6 +5,7 @@ import './App.css'
 import Hero from './ui/pages/hero';
 import Content from './ui/pages/content';
 import Footer from './ui/components/footer'
+import College from './ui/pages/college'
 import About from './ui/pages/about'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <>
     <Hero/>
     <Content/>
+    <College/>
     <About/>
     <Footer/>
 

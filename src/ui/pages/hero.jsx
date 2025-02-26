@@ -147,7 +147,7 @@ const Hero = () => {
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
   >
-    Exclusively for the Ace student community 🎓!
+    build for students, by students 🎓!
   </motion.button>
         <motion.h1 
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 md:mb-6 tracking-tight"
