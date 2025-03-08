@@ -10,16 +10,16 @@ Peer-Up ACE is an open-source platform designed to connect college students and 
 - **Project Collaborations** – Work together on innovative projects.
 
 ## Tech Stack
-- **Frontend:** React.js
+- **Frontend:** Vite + React.js
 - **Backend:** Node.js (Express)
-- **Database:** MongoDB / Firebase
+- **Database:** MongoDB 
 - **Deployment:** Vercel
 
 ## How to Contribute
 We welcome contributions from the community! Follow these steps to get started:
 
 1. **Fork the Repository** – Click the fork button at the top of this repo.
-2. **Clone the Repository** –
+2. **Clone the Repository** – 
    ```sh
    git clone https://github.com/your-username/peer-up-ace.git
    ```
@@ -33,7 +33,7 @@ We welcome contributions from the community! Follow these steps to get started:
    ```
 5. **Start the Development Server** –
    ```sh
-   npm start
+   npm run dev
    ```
 6. **Make Your Changes** – Improve features, fix bugs, or enhance the UI.
 7. **Commit and Push** –
